@@ -17,8 +17,8 @@ const userSchema = new mongoose.Schema({
     },
     role:{
         type:String,
-        enum:["Admin", "Student", "Visitor"]
+        enum:["Admin", "User", "Visitor"]
     }
 })
 
-module.exprts = mongoose.model("user", userSchema);
+module.exports = mongoose.model("user", userSchema);
